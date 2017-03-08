@@ -1,0 +1,1 @@
+<a style="color: #767D84;" href="mailto:{tag_e-mail}?Subject=Сотрудничество" target="_top">{tag_e-mail}</a>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<!--<![endif]-->
+
+{module_webapps,Настройки,a template="/_settings/head.tpl"}
+
+    <script type="text/javascript">(function(){var c=encodeURIComponent,s="SCRIPT",d=document,e=d.createElement(s),t=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||"");e.src="https://api.autopilothq.com/anywhere/7c5ceae9706a458f83548a9d761d1c69a7e1e768901a41e689908bac0eefdce8?"+p;e.type="text/javascript";e.async=true;t.parentNode.insertBefore(e, t);})();(function(){var c=encodeURIComponent,s="SCRIPT",d=document,e=d.createElement(s),t=d.getElementsByTagName(s)[0];e.src="https://api.autopilothq.com/anywhere/aa/7c5ceae9706a458f83548a9d761d1c69a7e1e768901a41e689908bac0eefdce8";e.type="text/javascript";e.async=false;t.parentNode.insertBefore(e, t);})();</script>
+    
+<head>
+<title>Услуги</title>
+<meta name="description" content="Полный список услуг Responsive Lab" />
+<meta name="robots" content="noindex" />
+
+    <style>
+        .item blockquote {
+                border-left: none;
+                margin: 0;
+            }
+            .infogr-krug {
+                background-color: #DB3747;
+                width: 300px !important;
+                height: 300px !important;
+                border-radius: 300px;
+                padding-top: 50px;
+            }
+            .infogr-text {
+                padding-top: 60px;
+                /*padding-left: 0px;
+                padding-right: 0px;*/
+            }
+            @media(max-width: 768px) {
+                .infogr-text {
+                    padding-top: 0px;
+                    text-align: center;
+                }
+                .infogr-krug {
+                    display: none;
+                }
+                #marketing-carousel .carousel-control {
+                    margin-top: 100px;
+                }
+            }
+            .spec-block {
+                cursor: pointer;
+            }
+            
+            .spec-block h1:hover {
+                opacity: 0.75;
+            }
+            .spec-krug {
+                background-color: #f5f5f5;
+                width: 100px;
+                height: 100px;
+                border-radius: 144px !important;
+                padding: 0px !important;
+                margin: 0px;
+                padding-top: 30px !important;
+                text-align: center !important;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                margin-bottom: 15px !important;
+                font-weight: 700 !important;
+                color: #34495E !important;
+                border: none !important;
+                font-size: 30px !important;
+                line-height: 0.9 !important;
+                 -moz-transition:0.3s;
+    -webkit-transition:0.3s;
+    transition:0.3s;
+            }
+            .spec-krug:hover {
+                padding: 0px;
+                margin: 0px;
+                padding-top: 55px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+               
+                font-weight: 700;
+                border: none;
+                font-size: 30px;
+                line-height: 0.9;
+                background-color: #f9f9f9 !important;
+            }
+            /*  .spec-krug h2 {
+            font-weight: 700;
+            margin-bottom: 0px;
+            color: #34495E;
+            
+        } */
+            
+            .icon {
+                color: #34495E;
+                font-size: 66px;
+                margin-bottom: 25px;
+            }
+        
+.overlay {
+    display: block;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    /* position: absolute;
+    */
+    right: 0%;
+    background-color: rgba(0,0,0,0.0);
+    z-index: 999999;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+.overlay h1 {
+    margin-bottom: 5px;
+    color:#fff;
+    font-size: 24px}
+.overlay h4 {
+    color:#fff;
+    margin-bottom: 10px;
+}
+.overlay h3 {
+    color:#fff;
+    margin-bottom: 5px;
+    font-size: 20px}
+.overlay:hover {
+    
+    background-color: rgba(0,0,0,0.7);
+}
+
+        #featured a.meta {
+	width: 100%;
+	height: 436px;
+	padding: 60px;
+	display: block;
+	background-color: transparent;
+	background-color: rgba(000, 000, 000, .5) !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-khtml-opacity: 1;
+	-moz-opacity: 1;
+	opacity: 1;
+	-webkit-transition: background-color .3s ease-out;
+	-moz-transition: background-color .3s ease-out;
+	-o-transition: background-color .3s ease-out;
+	transition: background-color .3s ease-out;
+}
+#featured a.meta:hover {
+	background-color: rgba(000, 000, 000, .7) !important;
+}
+        
+        span.title.small {
+            font-size: 75% !important;
+}
+        
+        
+        #featured .byline {
+    font-size: 18px !important;
+  
+    margin-right: 40px !important;
+    line-height: 20px !important;
+}
+        
+    </style>
+    
+    </head>
+<body id="filter" class="lightnav animsition">
+    
+    <!-- ============================ Off-canvas navigation =========================== -->
+
+   {module_webapps,Настройки,a template="/_settings/слайдер-меню.tpl"}
+
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+    <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/навигация.tpl"}
+
+        <!-- ============================ END Header & Logo bar =========================== -->
+
+        <!-- ============================ Page header =========================== -->
+        <!-- ============================ END Header & Logo bar =========================== -->
+
+        <!-- ============================ Page header =========================== -->
+
+       
+        
+
+        <section  id="featured" class="boost" style="padding-bottom: 60px;">
+            <div class="container">
+                
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+                    <div class="titleblock text-center"><br><br>
+                        <i class="icon-basic-laptop"></i>
+                        <h2>Что мы предлагаем</h2>
+                        <p class="col-md-8 col-md-offset-2">Мы создаём актуальные маркетинговые продукты, которые будут приводить вам новых клиентов и удерживать существующих.</p>
+                   <br>
+                    </div>
+                    
+                    
+                </div>
+            
+                    
+                    
+                 
+                </div>
+                </div>
+            <div class="container-fluid">
+                <div class="row">
+                    {module_webapps id="30509" filter="all" hideEmptyMessage="true"}
+                    
+                </div>
+            </div>
+        </section>
+ 
+            <!-- ============================ Process =========================== -->
+            
+            <section id="process">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="row">
+                                <div class="col-md-2 text-center">
+                                    <i class="icon-basic-accelerator"></i>
+                                </div>
+                                <div class="col-md-10">
+                                    <h3>Как это происходит</h3>
+                                    <p>Стандартный процесс взаимодействия с новыми клиентами:</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <!-- // .row -->
+                        </div>
+                        <!-- // col-xs-12 col-sm-12 col-md-8 col-md-offset-2 -->
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                            <div class="timeline-centered">
+                                <div class="line"></div>
+                                <div class="present">Встреча с клиентом</div>
+                                <div class="dot_tp"></div>
+                                <div class="born">Сдача проекта</div>
+                                <div class="dot_bt"></div>
+                                <div class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon wow fadeInUp" data-wow-delay="0.2s">
+                                            <span class="number">1</span>
+                                        </div>
+                                        <div class="timeline-label wow fadeInUp" data-wow-delay="0.2s">
+                                            <p>Сначала мы глубоко исследуем существующую информацию о вашем бизнесе, затем – о ваших конкурентах и пользователях.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon wow fadeInUp" data-wow-delay="0.4s">
+                                            <span class="number">2</span>
+                                        </div>
+                                        <div class="timeline-label wow fadeInUp" data-wow-delay="0.4s">
+                                            <p>Далее мы проектируем оптимальные сценарии пользовательского взаимодействия и разрабатываем прототипы.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon wow fadeInUp" data-wow-delay="0.6s">
+                                            <span class="number">3</span>
+                                        </div>
+                                        <div class="timeline-label wow fadeInUp" data-wow-delay="0.6s">
+                                            <p>На этапе разработки дизайна, мы создаем новый, уникальный образ вашего бренда, отвечающий требованиям бизнеса
+                                                и медийной среды.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timeline-entry">
+                                    <div class="timeline-entry-inner">
+                                        <div class="timeline-icon wow fadeInUp" data-wow-delay="0.8s">
+                                            <span class="number">4</span>
+                                        </div>
+                                        <div class="timeline-label wow fadeInUp" data-wow-delay="0.8s">
+                                            <p>В результате, вы получаете уникальную продукцию, которая будет не один год радовать вас и вашу аудиторию.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- timeline-centered -->
+                        </div>
+                        <!-- col-xs-12 col-sm-12 col-md-8 col-md-offset-2 -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- ============================ END Process =========================== -->
+            
+
+        <!-- ============================ END Proposal form =========================== -->
+
+        <!-- ============================ Hire us =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/начать проект.tpl"}
+
+        <!-- ============================ Footer =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/footer.tpl"}
+        
+        <!-- ============================ Footer =========================== -->
+
+        <!-- //////////////////////////////////////////////////////////// -->
+        <!-- Load our scripts -->
+
+        <script src="js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load first -->
+        <script src="js/scripts.js"></script><!-- Theme scripts -->
+        
+        <!-- Load our contact form script -->
+        <script src="includes/jqBootstrapValidation.js"></script><!-- Form Validation for contact form -->
+        <script src="includes/proposal/proposal.js"></script><!-- Proposal form js plugin -->
+
+    </div>
+    <!-- ============================ END #sb-site Main Page Wrapper =========================== -->
+
+    
+</body>
+</html>

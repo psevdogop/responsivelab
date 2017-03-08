@@ -1,0 +1,35 @@
+<div class="bs-header">
+	<div class="container">	
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>{tag_blogtitle}</h1>
+				<p class="description">{tag_blogdescription}</p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div class="container blog-container">
+	<div class="row">
+		<div class="col-sm-9">
+			{tag_postlist}
+
+		</div>
+		<div class="col-sm-3">
+			<h3>Recent Posts</h3>
+			{tag_blogrecentpost}
+			<hr />
+			<h3>Tags</h3>
+			{tag_blogtagcloud}     {tag_blogtaglist}
+			<hr />
+			<h3>Archive</h3>
+			{tag_blogpostarchive}
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col-xs-12">
+			<p class="page-nav">{tag_previouspage} {tag_pagination} {tag_nextpage}</p>
+		</div>
+	</div>
+</div>

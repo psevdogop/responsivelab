@@ -1,0 +1,1 @@
+<li textlink-id="{tag_name_nolink}" data-id="{tag_itemid}" name-id="{tag_название}" title="{tag_название}" img="{tag_тизер_value}?Action=thumbnail&Width=767&Height=400&algorithm=fill_proportional">{tag_name}</li>

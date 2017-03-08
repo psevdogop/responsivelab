@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+    <!--<![endif]-->
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Page Title, (write properly for SEO) -->
+        <title>{tag_название} | {module_webapps,Настройки,a template="/_settings/название.tpl"}</title>
+        
+        <!-- Meta viewport & behaviour -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        
+       
+         <!-- Favicon, (keep icon in root folder) -->
+        <link rel="shortcut icon" href="/favicon.png">
+        
+        <!-- Open graph meta data, (Facebook) -->
+        <meta property="og:description" content="{tag_description}">
+        <meta property="og:image" content="{tag_картинка_value}">
+        <meta property="og:site_name" content="{module_webapps,Настройки,a template="/_settings/название.tpl"}">
+        <meta property="og:title" content="{tag_название}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{tag_itemurl_withhost}">
+        
+        <!-- Meta card data, (Twitter) -->
+        <meta name="twitter:card" content="{tag_название}">
+        <meta name="twitter:site" content="@addtwitterhandlehere">
+        <meta name="twitter:creator" content="@addtwitterhandlehere">
+        <meta name="twitter:title" content="{module_webapps,Настройки,a template="/_settings/название.tpl"}">
+        <meta name="twitter:description" content="{tag_description}">
+        <meta name="twitter:image" content="{tag_картинка_value}">
+        
+        <!-- Apple touch icons, (keep icons in root folder) -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+        
+        <!-- Theme Styles, (load in this order) -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <!-- Bootstrap framework -->
+        <link href="/css/animsition.min.css" rel="stylesheet" type="text/css">
+        <!-- Page transitions -->
+        <link href="/css/animate.css" rel="stylesheet" type="text/css">
+        <!-- Element animations -->
+        <link href="/css/slidebars.min.css" rel="stylesheet" type="text/css" />
+        <!-- Element animations -->
+        <link href="/css/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css" />
+        <!-- Wallpaper plugin styles (video hero) -->
+        <link href="/css/iconfont.css" rel="stylesheet" type="text/css">
+        <!-- Icon fonts -->
+        <link href="/css/flexslider.css" rel="stylesheet" type="text/css">
+        <!-- Flexslider styles -->
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <!-- Core theme styles -->
+        <link href="/css/custom.css" rel="stylesheet" type="text/css">
+        <!-- Custom stylesheet, (add custom styles here, always load last) -->
+        
+        <!-- Load our stylesheet for IE8 -->
+        <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
+        
+        
+        
+        <!-- Typekit RL -->
+        <script src="//use.typekit.net/rjd2zzy.js"></script>
+        <script>
+            try {
+                Typekit.load();
+            } catch (e) {}
+        </script>
+        
+        <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+        <!--[if IE]>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+<![endif]-->
+        
+        <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')
+        </script>
+        
+        <!-- Load these in the <head> for quicker IE8+ load times -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="/js/html5shiv.min.js"></script>
+<script src="/js/respond.min.js"></script>
+<![endif]-->
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter32077546 = new Ya.Metrika({
+                            id: 32077546,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true,
+                            trackHash: true
+                        });
+                    } catch (e) {}
+                });
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function() {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/32077546" style="position:absolute; left:-9999px;" alt="" />
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+          
+        <!-- Meta data -->
+        <meta name="author" content="{module_webapps,Настройки,a template="/_settings/название.tpl"}">
+    </head>
+    
+    <body id="portfolio-item" class="lightnav animsition">
+        
+        <!-- ============================ Off-canvas navigation =========================== -->
+        
+        {module_webapps,Настройки,a template="/_settings/слайдер-меню.tpl"}
+        
+        <!-- ============================ END Off-canvas navigation =========================== -->
+        
+        <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+        
+        <div id="sb-site">
+            <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+            
+            <!-- ============================ Header & Logo bar =========================== -->
+            
+            {module_webapps,Настройки,a template="/_settings/навигация.tpl"}
+            
+            <!-- ============================ END Header & Logo bar =========================== -->
+            
+            
+            <!-- ============================ Page-content =========================== -->
+            
+            <section id="portfolio-content" class="fullwidth-img">
+                <div class="app-wrapper row" id="{tag_itemid}">
+                    
+                    
+                    
+                    
+                    
+                    {module_webapps id="Портфолио" filter="item" itemId="{tag_itemid}" targetFrame="" useBackupTemplate="false" resultsPerPage="" hideEmptyMessage="false" rowCount="" template="/_settings/{tag_шаблон}.tpl"}
+                </div>
+                
+            </section>
+            
+            <!-- ============================ END Page-content =========================== -->
+            
+            
+            <!-- ============================ Related =========================== -->
+            
+            <section id="related" class="beige-dk">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 text-center readon">
+                            <i class="icon-basic-postcard-multiple"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav class="app-pagers container">
+                    <ul style="list-style-type: none; padding-left: 0px;" class="row">
+                        <!-- Previous Post -->
+                        <li class="col-xs-12 col-sm-6 nopadding related-left prev">
+                            <img src="#" class="img-responsive" />
+                            <a href="#" class="readmore animsition-link" title="#">
+                                <span>#</span>
+                            </a>
+                        </li>
+                        <!-- Next Post -->
+                        <li class="col-xs-12 col-sm-6 nopadding related-right next">
+                            <img src="#" class="img-responsive" />
+                            <a href="#" class="readmore animsition-link" title="#">
+                                <span>#</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            
+            
+            <!-- ============================ END Related Posts =========================== -->
+            
+
+            <!-- ============================ Projects =========================== -->
+
+       
+
+        <!-- ============================ END Projects =========================== -->
+
+            
+            <!-- ============================ Hire us =========================== -->
+            
+            
+            {module_webapps,Настройки,a template="/_settings/начать проект.tpl"}
+            <!-- ============================ End Hire us =========================== -->
+            
+            
+            
+            <!-- ============================ Footer =========================== -->
+            {module_webapps,Настройки,a template="/_settings/footer.tpl"}
+            
+            <!-- ============================ END Footer =========================== -->
+            
+            <!-- //////////////////////////////////////////////////////////// -->
+            <!-- Load our scripts -->
+            
+            <style type="text/css">.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+}</style>
+            <script type="text/javascript">
+            function is_sticky(sticky){
+				
+            	if ($(window).width()<976) {
+		               		$(sticky).removeClass('sticky');
+		               	} else {
+		               		$(sticky).addClass('sticky');
+		               		$('.sticky').Stickyfill();
+		               	}
+            }
+               $(document).ready(function() {
+               		
+				var sticky=$('.sticky');
+				is_sticky(sticky)
+               	$(window).resize(function() {
+               		is_sticky(sticky)
+               	 
+				  
+				});
+                    // Optimalisation: Store the references outside the event handler:
+                /*    var $window = $(window);
+                    
+                    function checkWidth() {
+                        var windowsize = $window.width();
+                        if (windowsize > 991) {
+                            //if the window is greater than 440px wide then turn on jScrollPane..
+                            $(function() {
+                                
+                                $(".sticky").sticky({
+                                    topSpacing: 145,
+                                    zIndex: 2,
+                                    stopper: "#related"
+                                });
+                            });
+                        }
+                    }
+                    // Execute on load
+                    checkWidth();
+                    // Bind event listener
+                    $(window).resize(checkWidth);
+                    */
+                  
+                });
+            </script>
+            
+            
+            
+            <ul style="display:none" class="source-pagination">{module_webapps,Портфолио,a template="/_settings/pagination.tpl"}</ul>
+           
+            <script>
+                $(document).ready(function() {
+                    if ($(".app-wrapper").length === 0) {
+                        return;
+                    }
+                    
+                    var $targetUl = $(".source-pagination li"),
+                        $currentID = $(".app-wrapper").attr('id'),
+                        $targetListItems = $("nav.app-pagers ul li"),
+                        $targetBackLink = $("nav.app-pagers ul li.prev"),
+                        $targetForwardLink = $("nav.app-pagers ul li.next");
+                    
+                    console.log("Current ID: " + $currentID);
+                    
+                    $targetUl.each(function() {
+                        var itemID = $(this).data('id');
+                        if (itemID == $currentID) {
+                            var backLink = $(this).prev().find("a").attr("href");
+                            var forwardLink = $(this).next().find("a").attr("href");
+                            
+                            // found forward link
+                            if (forwardLink != undefined) {
+                                $targetForwardLink.find("a").attr("href", forwardLink);
+                            } else {
+                                $targetForwardLink.hide();
+                            }
+                            
+                            // found back link
+                            if (backLink != undefined) {
+                                $targetBackLink.find("a").attr("href", backLink);
+                            } else {
+                                $targetBackLink.hide();
+                            }
+                            
+                            
+                        }
+                        
+                    });
+                });
+            </script>
+            
+            <!--script>
+// работает
+ $(function() {
+                    $('.prev a').html($('.source-pagination a[href="' + $('.prev a').attr('href') + '"]').parent().attr('name-id'));
+                    $('.next a').html($('.source-pagination a[href="' + $('.next a').attr('href') + '"]').parent().attr('name-id'));
+                });
+</script-->
+            
+            <script>
+               $(function() {
+
+    $('.prev a').html($('.source-pagination a[href="' + $('.prev a').attr('href') + '"]').parent().attr('name-id'));
+
+    $('.prev img').attr('src',$('.source-pagination a[href="' + $('.prev a').attr('href') + '"]').parent().attr('img'))
+
+    $('.next a').html($('.source-pagination a[href="' + $('.next a').attr('href') + '"]').parent().attr('name-id'));
+                   
+   $('.prev a').attr('title',$('.source-pagination a[href="' + $('.prev a').attr('href') + '"]').parent().attr('title'));
+                   
+   $('.next a').attr('title',$('.source-pagination a[href="' + $('.next a').attr('href') + '"]').parent().attr('title'));
+                   
+
+    $('.next img').attr('src',$('.source-pagination a[href="' + $('.next a').attr('href') + '"]').parent().attr('img'))
+
+});
+            </script>
+            
+            <script src="/js/plugins.min.js"></script>
+            <!-- Bootstrap core and concatenated plugins always load first -->
+            <script src="/js/bootstrap.lightbox.js"></script>
+            <!-- Lightbox -->
+            <script src="/includes/jquery.sharrre.min.js"></script><!-- Social sharing plugin (sharrre.js) -->
+            <script src="/js/scripts.js"></script>
+            <!-- Theme scripts -->
+            
+            
+             <script>
+            $('#twitter').sharrre({
+              share: {
+                twitter: true
+              },
+              template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Твитнуть</div></a>',
+              enableHover: false,
+              enableTracking: true,
+              buttons: { twitter: {via: 'add_username'}},
+              click: function(api, options){
+                api.simulateClick();
+                api.openPopup('twitter');
+              }
+            });
+            $('#facebook').sharrre({
+              share: {
+                facebook: true
+              },
+              template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Нравится</div></a>',
+              enableHover: false,
+              enableTracking: true,
+              click: function(api, options){
+                api.simulateClick();
+                api.openPopup('facebook');
+              }
+            });
+            $('#googleplus').sharrre({
+              share: {
+                googlePlus: true
+              },
+              template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><span></span>Google+</div></a>',
+              enableHover: false,
+              enableTracking: true,
+              click: function(api, options){
+                api.simulateClick();
+                api.openPopup('googlePlus');
+              }
+            });
+        </script>
+            
+        </div>
+        <!-- ============================ END #sb-site Main Page Wrapper =========================== -->
+        
+    </body>
+    
+</html>

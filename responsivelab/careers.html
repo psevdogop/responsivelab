@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<!--<![endif]-->
+
+{module_webapps,Настройки,a template="/_settings/head.tpl"}
+
+<head>
+<title>Карьера</title>
+<meta name="description" content="Будем рады принять в свою команду увлеченных, профессиональных людей, разделяющих наши взгляды на дизайн, творчество и совместную работу." />
+</head>
+<body id="careers" class="lightnav animsition">
+
+    <!-- ============================ Off-canvas navigation ============================ -->
+
+    {module_webapps,Настройки,a template="/_settings/слайдер-меню.tpl"}
+
+    <!-- ============================ END Off-canvas navigation ============================ -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+    <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        {module_webapps,Настройки,a template="/_settings/навигация.tpl"}
+        <!-- ============================ END Header & Logo bar =========================== -->
+
+        <!-- ============================ Page Header =========================== -->
+
+        <section id="page-header" class="element-img scrollme" style="background-image: url('img/careers/page-header.jpg')">
+            <div class="container">
+                <div class="row boost">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 vertical-align text-center">
+                        <div class="animateme center-me" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="120">
+                            <h1>Работа</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerfade beige-dk"></div>
+        </section>
+        
+        <!-- ============================ END Page Header =========================== -->
+
+        <!-- ============================ Page tabs =========================== -->
+{module_webapps,Настройки,a template="/_settings/мининавигация.tpl"}
+
+                <!-- ============================ END Page tabs =========================== -->
+
+                <!-- ============================ Careers =========================== -->
+
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 titleblock text-center">
+                        <h2>Ищем профессионалов</h2>
+                        <p>Будем рады принять в свою команду молодых адекватных профессионалов, разделяющих наши взгляды на дизайн, творчество и подход к работе. Расстояние – не преграда, мы умеем работать online.</p>
+                    </div>
+                </div>
+                <br>
+                <!-- Job 1 -->
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                       
+                        {module_webapps id="Вакансии" filter="all"}
+                       
+                    </div>
+                    <!-- // .col-md-8 .col-md-offset-2 -->
+                </div>
+                <!-- // .row -->
+
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+
+                        <!--div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInLeft" data-wow-delay="0.4s">
+                                <img src="img/careers/box.jpg" class="img-responsive" alt="Image">
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                                <div class="apply">
+                                    <h4>Think you&#39;ve got what it takes?</h4>
+<h5><a href="/contact" class="animsition-link" title="Apply Today">apply today</a></h5>
+                                </div>
+                            </div>
+                        </div-->
+                        <div class="col-md-12 apply-meta">
+                            <p>Если какая-нибудь из вакансий вам по душе – пожалуйста, загляните на нашу <a href="/contact" class="animsition-link" title="Contact" style="color:#fff;text-decoration:underline">страницу контактов</a> и отправьте отклик со ссылками на свое резюме и соцсети.</p>
+                            
+                        </div>
+
+                   </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <!-- ============================ END Page tabs =========================== -->
+
+        <!-- ============================ Hire Us =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/ждем.tpl"}
+
+        <!-- ============================ END Hire Us =========================== -->
+
+        <!-- ============================ Footer =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/footer.tpl"}
+        
+        <!-- ============================ END Footer =========================== -->
+
+        <!-- //////////////////////////////////////////////////////////// -->
+        <!-- Load our scripts -->
+
+        <script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load first -->
+        
+        <script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+        
+        
+       
+    </div>
+    <!-- ============================ END #sb-site Main Page Wrapper =========================== -->
+
+</body>
+</html>

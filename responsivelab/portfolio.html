@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-RU" lang="ru-RU">
+<!--<![endif]-->
+
+{module_webapps,Настройки,a template="/_settings/head.tpl"}
+
+<head>
+<title>Портфолио</title>
+<meta name="description" content="Наша философия наиболее ярко отражается 
+в результатах кропотливого труда и любви к веб-дизайну." />
+</head>
+<body id="filter" class="lightnav animsition">
+    
+    <!-- ============================ Off-canvas navigation =========================== -->
+
+   {module_webapps,Настройки,a template="/_settings/слайдер-меню.tpl"}
+
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+    <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/навигация.tpl"}
+
+        <!-- ============================ END Header & Logo bar =========================== -->
+
+        <!-- ============================ Page header =========================== -->
+
+        <section id="page-header" class="element-img scrollme" style="background-image: url('img/portfolio/page-header.jpg')">
+            <div class="container">
+                <div class="row boost">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 vertical-align text-center">
+                        <div class="animateme center-me" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="120">
+                            <h1>Наши работы</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="headerfade beige-dk"></div>
+        </section>
+
+        <!-- ============================ END Page header =========================== -->
+
+        <!-- ============================ Featured =========================== -->
+
+        <section id="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 titleblock text-center">
+                        <i class="icon-basic-signs"></i>
+                        <h2>Последние обновления</h2>
+                        <p>Наша философия наиболее ярко отражается <br>в результатах кропотливого труда и любви к веб-дизайну.</p>
+                    </div>
+                   
+                </div>
+                 <br>
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    {module_webapps id="Портфолио" filter="classified" itemId="48429" useBackupTemplate="true" resultsPerPage="4" hideEmptyMessage="true"}
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ END Featured =========================== -->
+
+        <!-- ============================ Library titleblock =========================== -->
+
+        <section class="container-fluid beige">
+            <div class="row titleblock wow fadeInUp" data-wow-delay="0.4s">
+                <div class="col-md-12 title">
+                    <h3>Полный каталог</h3>
+                    <p>Здесь вы увидите наиболее полный список наших проектов.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ END Library titleblock =========================== -->
+
+        <!-- ============================ Projects =========================== -->
+
+        <section id="projects" class="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- Titlebar -->
+                        <div class="container-fluid sortlinks">
+                            <ul class="filters">
+                                <li>
+                                    <p class="filter active" data-filter="app design video web">всё
+                                </li>
+                                 <li>
+                                    <p class="filter" data-filter="web">Сайты</p>
+                                </li>
+                                <li>
+                                    <p class="filter" data-filter="app">Сервисы</p>
+                                </li>
+                                <li>
+                                    <p class="filter" data-filter="design">Дизайн</p>
+                                </li>
+                                <li>
+                                    <p class="filter" data-filter="video">Видео</p>
+                                </li>
+                               
+                            </ul>
+                            <span class="icon-flickr"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center">
+                        {module_webapps id="26799" filter="all"}
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <!-- // .row -->
+                <div class="spacingfix"></div>
+            </div>
+            <!-- // .container -->
+        </section>
+
+        <!-- ============================ END Projects =========================== -->
+
+        <!-- ============================ Hire us =========================== -->
+
+       {module_webapps,Настройки,a template="/_settings/начать проект.tpl"}
+
+        <!-- ============================ END Hire us =========================== -->
+
+        <!-- ============================ Footer =========================== -->
+{module_webapps,Настройки,a template="/_settings/footer.tpl"}
+
+        <!-- ============================ END Footer =========================== -->
+
+        <!-- //////////////////////////////////////////////////////////// -->
+        <!-- Load our scripts -->
+
+        <script src="js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load first -->
+        <script src="js/jquery.easing.min.js"></script><!-- Easing for image animations on filter portfolio -->
+        <script src="js/jquery.mixitup.min.js"></script><!-- MixItUp plugin for filter portfolio -->
+        <script src="js/scripts.js"></script><!-- Theme scripts -->
+        <!-- Initialize MixItUp plugin -->
+        <script>
+            $(function () {
+            var filterList = {
+              init: function () {
+              
+                $('#projects').mixitup({
+                  targetSelector: '.filter-item',
+                  filterSelector: '.filter',
+                  effects: ['fade'],
+                  easing: 'snap',
+                });       
+              
+              }
+            
+            };
+            filterList.init();
+            });
+        </script>
+
+    </div>
+    <!-- ============================ END #sb-site Main Page Wrapper =========================== -->
+
+</body>
+</html>
